@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gmail-unsub"
+version = "0.1.0"
+description = "Get Unsubscribe e-mail links for all of the Digital Marketing Spam you receive"
+authors = ["Vinicius Mesel <4984147+vmesel@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "gmail_unsub"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-auth-oauthlib = "^1.0.0"
+google-api-python-client = "^2.89.0"
+google-auth-httplib2 = "^0.1.0"
+tqdm = "^4.65.0"
+pandas = "^2.0.2"
+python-decouple = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
